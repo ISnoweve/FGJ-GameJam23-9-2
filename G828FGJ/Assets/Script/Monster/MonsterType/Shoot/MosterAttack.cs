@@ -5,12 +5,14 @@ using UnityEngine;
 public class MosterAttack : MonoBehaviour
 {
     [SerializeField] private MonsterGun MonsterAttack;
+    [SerializeField] private MonsterJudgeZone monsterJudgeZone;
 
     public int burstCount;
     public bool isShoot;
     private void Awake()
     {
         MonsterAttack = GetComponentInChildren<MonsterGun>();
+        monsterJudgeZone = GetComponentInChildren<MonsterJudgeZone>();
     }
     private void Start()
     {
@@ -23,8 +25,8 @@ public class MosterAttack : MonoBehaviour
             return;
         }
 
-        bool timeToMove = MonsterJudgeZone.Instance.isInMoveZone;
-        bool timeToAttack = MonsterJudgeZone.Instance.isInAttackZone;
+        bool timeToMove = monsterJudgeZone.isInMoveZone;
+        bool timeToAttack = monsterJudgeZone.isInAttackZone;
 
         if (timeToMove == true && timeToAttack == true && isShoot == false)
         {

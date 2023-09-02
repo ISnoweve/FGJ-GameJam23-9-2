@@ -5,6 +5,7 @@ using UnityEngine;
 public class MonsterSmash : MonoBehaviour
 {
     [SerializeField] private MonsterSmashMove monsterMove;
+    [SerializeField] private MonsterJudgeZone monsterJudgeZone;
 
     public bool isSmash;
     public int dashSpeed;
@@ -12,6 +13,7 @@ public class MonsterSmash : MonoBehaviour
     private void Awake()
     {
         monsterMove = GetComponentInChildren<MonsterSmashMove>();
+        monsterJudgeZone = GetComponentInChildren<MonsterJudgeZone>();
     }
 
     private void Start()
@@ -25,8 +27,8 @@ public class MonsterSmash : MonoBehaviour
             return;
         }
 
-        bool timeToMove = MonsterJudgeZone.Instance.isInMoveZone;
-        bool timeToAttack = MonsterJudgeZone.Instance.isInAttackZone;
+        bool timeToMove = monsterJudgeZone.isInMoveZone;
+        bool timeToAttack = monsterJudgeZone.isInAttackZone;
 
         if (timeToMove == true && timeToAttack == true)
         {

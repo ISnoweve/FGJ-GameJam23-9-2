@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class MonsterJudgeZone : MonoBehaviour
 {
-    #region Instance
-    public static MonsterJudgeZone Instance { get; set; }
-
-    private void Awake()
-    {
-        Instance = this;
-    }
-    #endregion
 
     [SerializeField] private GameObject Mosnter;
     [SerializeField] private GameObject moveJudgePosition;

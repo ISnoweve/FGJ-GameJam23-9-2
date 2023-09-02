@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class MonsterShootMove : MonoBehaviour
 {
-    public GameObject player;
     [SerializeField] private SpriteRenderer textureFlip;
+    [SerializeField] private MonsterJudgeZone monsterJudgeZone;
 
+    public GameObject player;
     public float moveSpeed;
+
+    private void Awake()
+    {
+        monsterJudgeZone = GetComponentInChildren<MonsterJudgeZone>();
+    }
     private void FixedUpdate()
     {
         if (GameManager.instance.Pause)
@@ -15,10 +21,10 @@ public class MonsterShootMove : MonoBehaviour
             return;
         }
 
-        bool timeToMove = MonsterJudgeZone.Instance.isInMoveZone;
-        bool timeToAttack = MonsterJudgeZone.Instance.isInAttackZone;
+        bool timeToMove = monsterJudgeZone.isInMoveZone;
+        bool timeToAttack = monsterJudgeZone.isInAttackZone;
 
-        player = MonsterJudgeZone.Instance.objectInZone;
+        player = monsterJudgeZone.objectInZone;
 
         this.transform.up = LookAtPlayer();
 
