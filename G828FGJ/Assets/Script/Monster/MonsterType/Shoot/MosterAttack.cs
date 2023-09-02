@@ -7,6 +7,7 @@ public class MosterAttack : MonoBehaviour
     [SerializeField] private MonsterGun MonsterAttack;
     [SerializeField] private MonsterJudgeZone monsterJudgeZone;
 
+    public int cooltime;
     public int burstCount;
     public bool isShoot;
     private void Awake()
@@ -47,7 +48,7 @@ public class MosterAttack : MonoBehaviour
             Debug.Log("MakeSureBurst");
             yield return new WaitForSeconds(0.1f);
         }
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(cooltime);
         isShoot = false;
     }
 }
