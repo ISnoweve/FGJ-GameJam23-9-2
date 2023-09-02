@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterSmash : MonoBehaviour
+public class MosterAttack : MonoBehaviour
 {
     [SerializeField] private MonsterGun MonsterAttack;
 
     public int burstCount;
-    private bool isShoot;
+    public bool isShoot;
     private void Awake()
     {
         MonsterAttack = GetComponentInChildren<MonsterGun>();

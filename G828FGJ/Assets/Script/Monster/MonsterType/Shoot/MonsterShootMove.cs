@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterMove : MonoBehaviour
+public class MonsterShootMove : MonoBehaviour
 {
     public GameObject player;
+    [SerializeField] private SpriteRenderer textureFlip;
 
     public float moveSpeed;
     private void FixedUpdate()
@@ -35,6 +36,15 @@ public class MonsterMove : MonoBehaviour
     private Vector3 LookAtPlayer()
     {
         Vector3 rotate = (player.transform.position - transform.position).normalized;
+
+        if (rotate.x <= 0)
+        {
+            textureFlip.flipX = true;
+        }
+        else if (rotate.x >= 0)
+        {
+            textureFlip.flipX = false;
+        }
         return rotate;
     }
 }

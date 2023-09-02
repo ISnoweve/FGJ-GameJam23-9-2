@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4555789096042217835, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.11795649
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555789096042217835, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0424
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555789096430911135, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4555789096867404739, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -55,7 +67,92 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Smash
       objectReference: {fileID: 0}
+    - target: {fileID: 4555789097326713210, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555789097541277192, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555789097747612828, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.96
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4555789096867404748, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+    - {fileID: 4555789096867404749, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
     - {fileID: 4555789096867404738, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+--- !u!1 &1535151288110131654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4555789096867404742, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+  m_PrefabInstance: {fileID: 3059239359907148288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1641578578437059582
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535151288110131654}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &698257315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535151288110131654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f21ea00987d454e8fec8de864aa914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterMove: {fileID: 0}
+  isSmash: 0
+  dashSpeed: 10
+--- !u!114 &3757398598898395627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535151288110131654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d46b2a97d9f444bf3cc6c5d214e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  textureFlip: {fileID: 1535151288640678778}
+  moveSpeed: 5
+--- !u!114 &8813260298026954643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535151288110131654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271be4447b7adcd4db60250d69e28505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &1535151288640678778 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4555789097326713210, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+  m_PrefabInstance: {fileID: 3059239359907148288}
+  m_PrefabAsset: {fileID: 0}
