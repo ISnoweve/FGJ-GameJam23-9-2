@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 4816568053307624562}
   m_Layer: 0
   m_Name: Monster_Shoot
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,7 +220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textureFlip: {fileID: 4555789097326713210}
-  monsterJudgeZone: {fileID: 0}
   player: {fileID: 0}
   moveSpeed: 2.5
 --- !u!114 &4555789096867404748
@@ -235,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa8c632d0ef4aa489bac02d3e802b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 71650913376753843, guid: 19a75ba50e90b614fb5414c16f3b0f3c, type: 3}
+  Bullet: {fileID: 71650913376753843, guid: fd9ccc32f0b42f94a85ad9863d230179, type: 3}
   shootPoint: {fileID: 4555789096430911135}
 --- !u!95 &4376538930943164926
 Animator:
@@ -269,6 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 271be4447b7adcd4db60250d69e28505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieSprite: {fileID: 6108124352418481161, guid: dbf227c60ea31ad4c8c16a41451d8a4f, type: 3}
 --- !u!1 &4555789097167677567
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 48
+  m_SortingOrder: 98
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0.08061333, b: 0.050943315, a: 1}
   m_FlipX: 0

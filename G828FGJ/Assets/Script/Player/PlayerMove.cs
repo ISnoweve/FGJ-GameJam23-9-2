@@ -50,7 +50,6 @@ public class PlayerMove : MonoBehaviour
                 GameManager.instance.Pause = false;
             else
                 GameManager.instance.Pause = true;
-            Debug.Log("GameManager" + GameManager.instance.Pause);
         }
 
     }

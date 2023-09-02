@@ -38,9 +38,9 @@ public class EnemyBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (other.gameObject.TryGetComponent<EnemyDestroy>(out var enemy))
+        if (other.gameObject.TryGetComponent<PlayerDestroy>(out var player))
         {
-            enemy.Destroy();
+            player.Destroy();
         }
     }
 

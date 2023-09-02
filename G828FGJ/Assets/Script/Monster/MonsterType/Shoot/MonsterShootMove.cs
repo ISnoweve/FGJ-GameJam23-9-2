@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonsterShootMove : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer textureFlip;
-    [SerializeField] private MonsterJudgeZone monsterJudgeZone;
+     private MonsterJudgeZone monsterJudgeZone;
 
     public GameObject player;
     public float moveSpeed;

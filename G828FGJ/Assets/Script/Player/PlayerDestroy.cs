@@ -14,7 +14,6 @@ public class PlayerDestroy : MonoBehaviour
     public void Destroy()
     {
         ani.SetTrigger("Die");
-        Destroy(this.gameObject, 1.5f);
         Debug.Log("玩家死亡");
     }
 

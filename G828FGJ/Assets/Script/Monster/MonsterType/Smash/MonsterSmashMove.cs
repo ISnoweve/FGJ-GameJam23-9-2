@@ -5,14 +5,14 @@ using UnityEngine;
 public class MonsterSmashMove : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer textureFlip;
-    [SerializeField] private MonsterJudgeZone monsterJudgeZone;
+    private MonsterJudgeZone monsterJudgeZone;
 
     public GameObject player;
     public float moveSpeed;
 
     private void Awake()
     {
-        monsterJudgeZone = GetComponentInChildren<MonsterJudgeZone>();
+        monsterJudgeZone = GetComponent<MonsterJudgeZone>();
     }
     private void FixedUpdate()
     {
@@ -43,7 +43,6 @@ public class MonsterSmashMove : MonoBehaviour
     {
         Vector3 rotate = (player.transform.position - transform.position).normalized;
 
-        Debug.Log(rotate);
         if (rotate.x <= 0)
         {
             textureFlip.flipX = true;

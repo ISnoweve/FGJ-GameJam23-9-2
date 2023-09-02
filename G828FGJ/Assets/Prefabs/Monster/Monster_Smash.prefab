@@ -67,6 +67,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Smash
       objectReference: {fileID: 0}
+    - target: {fileID: 4555789096867404742, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4555789097326713210, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -81,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4555789097326713210, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
       propertyPath: m_SortingOrder
-      value: 187
+      value: 98
       objectReference: {fileID: 0}
     - target: {fileID: 4555789097541277192, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
       propertyPath: m_LocalPosition.x
@@ -150,7 +154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textureFlip: {fileID: 1535151288640678778}
-  monsterJudgeZone: {fileID: 0}
   player: {fileID: 0}
   moveSpeed: 2.5
 --- !u!114 &8813260298026954643
@@ -165,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 271be4447b7adcd4db60250d69e28505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieSprite: {fileID: 6108124352418481161, guid: dbf227c60ea31ad4c8c16a41451d8a4f, type: 3}
 --- !u!212 &1535151288640678778 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 4555789097326713210, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}

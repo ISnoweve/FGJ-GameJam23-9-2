@@ -12,8 +12,8 @@ public class MonsterSmash : MonoBehaviour
 
     private void Awake()
     {
-        monsterMove = GetComponentInChildren<MonsterSmashMove>();
-        monsterJudgeZone = GetComponentInChildren<MonsterJudgeZone>();
+        monsterMove = GetComponent<MonsterSmashMove>();
+        monsterJudgeZone = GetComponent<MonsterJudgeZone>();
     }
 
     private void Start()

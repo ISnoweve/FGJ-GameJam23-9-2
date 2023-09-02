@@ -17,11 +17,11 @@ public class MonsterJudgeZone : MonoBehaviour
     private void Start()
     {
         isInMoveZone = false;
+        objectInZone = GameObject.FindGameObjectWithTag("Player");
         isInAttackZone = false;
     }
     private void Update()
     {
-        objectInZone = GameObject.FindGameObjectWithTag("Player");
         isInMoveZone = MovementZone();
         isInAttackZone = AttackZone();
     }
@@ -31,7 +31,7 @@ public class MonsterJudgeZone : MonoBehaviour
     }
     #endregion
 
-    //´ú¸Õ¥Î
+    //ï¿½ï¿½ï¿½Õ¥ï¿½
     private void MonsterAction(bool moveJudge, bool attackJudge)
     {
         if (moveJudge == true && attackJudge == false)
@@ -49,10 +49,10 @@ public class MonsterJudgeZone : MonoBehaviour
         Vector3 moveJudgeVector = moveJudgePosition.transform.position;
         float moveJudgeZone = Vector3.Distance(monsterVector, moveJudgeVector);
 
-        // ­pºâª±®a»PmoveJudgeVectorªº¶ZÂ÷
+        // ï¿½pï¿½âª±ï¿½aï¿½PmoveJudgeVectorï¿½ï¿½ï¿½Zï¿½ï¿½
         float playerDistance = Vector3.Distance(objectInZone.transform.position, monsterVector);
 
-        // ¦pªGª±®a¶ZÂ÷¦bmoveJudgeZone¤º¡A«h°õ¦æ¾Ş§@
+        // ï¿½pï¿½Gï¿½ï¿½ï¿½aï¿½Zï¿½ï¿½ï¿½bmoveJudgeZoneï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½ï¿½Ş§@
         if (moveJudgeZone >= playerDistance)
         {
             return true;
@@ -69,10 +69,10 @@ public class MonsterJudgeZone : MonoBehaviour
         Vector3 attackJudgeVector = attackJudgePosition.transform.position;
         float attackJudgeZone = Vector3.Distance(monsterVector, attackJudgeVector);
 
-        // ­pºâª±®a»PmoveJudgeVectorªº¶ZÂ÷
+        // ï¿½pï¿½âª±ï¿½aï¿½PmoveJudgeVectorï¿½ï¿½ï¿½Zï¿½ï¿½
         float playerDistance = Vector3.Distance(objectInZone.transform.position, monsterVector);
 
-        // ¦pªGª±®a¶ZÂ÷¦bmoveJudgeZone¤º¡A«h°õ¦æ¾Ş§@
+        // ï¿½pï¿½Gï¿½ï¿½ï¿½aï¿½Zï¿½ï¿½ï¿½bmoveJudgeZoneï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½ï¿½Ş§@
         if (attackJudgeZone >= playerDistance)
         {
             return true;

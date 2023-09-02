@@ -262,9 +262,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Shoot
       objectReference: {fileID: 0}
-    - target: {fileID: 4555789096867404749, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
-      propertyPath: moveSpeed
-      value: 2.5
+    - target: {fileID: 4555789096867404742, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555789096867404748, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: Bullet
+      value: 
+      objectReference: {fileID: 71650913376753843, guid: fd9ccc32f0b42f94a85ad9863d230179, type: 3}
+    - target: {fileID: 4555789097326713210, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: m_SortingOrder
+      value: 98
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
@@ -537,9 +545,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Smash
       objectReference: {fileID: 0}
-    - target: {fileID: 3757398598898395627, guid: 2a53aebe6260a7f4dbdab6b279d1f593, type: 3}
-      propertyPath: moveSpeed
-      value: 2.5
+    - target: {fileID: 1535151288110131654, guid: 2a53aebe6260a7f4dbdab6b279d1f593, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535151288640678778, guid: 2a53aebe6260a7f4dbdab6b279d1f593, type: 3}
+      propertyPath: m_SortingOrder
+      value: 98
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a53aebe6260a7f4dbdab6b279d1f593, type: 3}
@@ -1089,11 +1101,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1028431465324534312, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.29
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 1028431465324534312, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.42
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1028431465324534312, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2521,7 +2533,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3781,7 +3793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329038205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8641386, y: -0.3800064, z: -10.988495}
+  m_LocalPosition: {x: 3.0458612, y: -0.3000064, z: -10.988495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
