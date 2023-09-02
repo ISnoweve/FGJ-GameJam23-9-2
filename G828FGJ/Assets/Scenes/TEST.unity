@@ -1123,42 +1123,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1028431465324534319, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3b0353294c38dd049a757b25648edbdb, type: 3}
-    - target: {fileID: 1028431465324534319, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465324534319, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465324534319, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465627164534, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.63761
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465627164534, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.63761
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465627164534, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.63761
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465627164534, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.229
-      objectReference: {fileID: 0}
-    - target: {fileID: 8782450334954335044, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5a921181c9b9ef94d9f0518e6caf0344, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
 --- !u!1 &302212764
