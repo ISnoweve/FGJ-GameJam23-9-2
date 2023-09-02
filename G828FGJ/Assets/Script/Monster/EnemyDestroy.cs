@@ -7,6 +7,7 @@ public class EnemyDestroy : MonoBehaviour
 
     public void Destroy()
     {
+        GameManager.instance.enemyDie += 1;
         Instantiate(dieSprite, transform.position, transform.rotation);
         Destroy(this.gameObject);
     }
