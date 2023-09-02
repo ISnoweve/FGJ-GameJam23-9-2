@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 4555789096867404749}
   - component: {fileID: 4555789096867404748}
   m_Layer: 0
-  m_Name: Monster
+  m_Name: Monster_Shoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,7 +186,6 @@ MonoBehaviour:
   Mosnter: {fileID: 4555789096867404742}
   moveJudgePosition: {fileID: 4555789097541277193}
   attackJudgePosition: {fileID: 4555789097747612829}
-  monsterRotate: {fileID: 0}
   objectInZone: {fileID: 0}
   isInMoveZone: 0
   isInAttackZone: 0
@@ -203,6 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterAttack: {fileID: 0}
+  burstCount: 5
 --- !u!114 &4555789096867404749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +231,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 71650913376753843, guid: 19a75ba50e90b614fb5414c16f3b0f3c, type: 3}
   shootPoint: {fileID: 4555789096430911135}
-  coolTime: 0.1
 --- !u!1 &4555789097167677567
 GameObject:
   m_ObjectHideFlags: 0

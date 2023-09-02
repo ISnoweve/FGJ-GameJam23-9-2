@@ -16,7 +16,6 @@ public class MonsterJudgeZone : MonoBehaviour
     [SerializeField] private GameObject Mosnter;
     [SerializeField] private GameObject moveJudgePosition;
     [SerializeField] private GameObject attackJudgePosition;
-    [SerializeField] private Transform monsterRotate;
 
     public GameObject objectInZone;
     public bool isInMoveZone;
