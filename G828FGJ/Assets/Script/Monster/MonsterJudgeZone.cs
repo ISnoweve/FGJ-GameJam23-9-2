@@ -82,18 +82,19 @@ public class MonsterJudgeZone : MonoBehaviour
             return false;
         }
     }
-    private void OnDrawGizmos()
-    {
-        UnityEditor.Handles.color = Color.yellow;
+    //private void OnDrawGizmos()
+    //{
 
-        Vector3 monsterVector = transform.position;
-        Vector3 moveJudgeVector = moveJudgePosition.transform.position;
-        Vector3 attackJudgeVector = attackJudgePosition.transform.position;
+    //    UnityEditor.Handles.color = Color.yellow;
 
-        float moveJudgeZone = Vector3.Distance(monsterVector, moveJudgeVector);
-        float attackJudgeZone = Vector3.Distance(monsterVector, attackJudgeVector);
+    //    Vector3 monsterVector = transform.position;
+    //    Vector3 moveJudgeVector = moveJudgePosition.transform.position;
+    //    Vector3 attackJudgeVector = attackJudgePosition.transform.position;
 
-        UnityEditor.Handles.DrawWireDisc(monsterVector, Vector3.back, moveJudgeZone);
-        UnityEditor.Handles.DrawWireDisc(monsterVector, Vector3.back, attackJudgeZone);
-    }
+    //    float moveJudgeZone = Vector3.Distance(monsterVector, moveJudgeVector);
+    //    float attackJudgeZone = Vector3.Distance(monsterVector, attackJudgeVector);
+
+    //    UnityEditor.Handles.DrawWireDisc(monsterVector, Vector3.back, moveJudgeZone);
+    //    UnityEditor.Handles.DrawWireDisc(monsterVector, Vector3.back, attackJudgeZone);
+    //}
 }
