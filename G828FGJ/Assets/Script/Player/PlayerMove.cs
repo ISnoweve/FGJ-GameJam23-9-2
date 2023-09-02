@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D rb;
+    Animator ani;
     Gun gun;
     [SerializeField] private float speed;
     [SerializeField] private Vector2 movementDirection = Vector2.up;
@@ -13,6 +15,7 @@ public class PlayerMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         gun = GetComponentInChildren<Gun>();
+        ani = GetComponent<Animator>();
     }
     void Update()
     {
@@ -55,8 +58,17 @@ public class PlayerMove : MonoBehaviour
     }
     void Move()
     {
+
         float Horizontal = Input.GetAxis("Horizontal");
         float Vetical = Input.GetAxis("Vertical");
+        if (Horizontal != 0 || Vetical != 0)
+        {
+            ani.SetBool("Walk", true);
+
+        }
+        else
+            ani.SetBool("Walk", false);
+
         Vector2 move = new Vector2(Horizontal, Vetical) * speed * Time.deltaTime;
         rb.velocity = move;
 
