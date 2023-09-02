@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
+
     [SerializeField] private float speed = 20;
     private float destroyTime = 5;
 
@@ -31,10 +32,9 @@ public class Bullet : MonoBehaviour
         if (destroyTime <= 0)
             Destroy(gameObject);
     }
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy") && other.gameObject.CompareTag("Wall"))
+        if (other.gameObject.CompareTag("Player") && other.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }
