@@ -5,6 +5,7 @@ public enum BossState
     Idle,
     Shoot,
     Chase,
-    Attack,
+    RotateShoot,
+    AroundShoot,
     Dead
 }
