@@ -689,7 +689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &325336355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8539,7 +8539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8972a32f93d03144380dd78c86a96b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIObject: {fileID: 581859916}
+  UIObject: {fileID: 325336354}
   CameraObject: {fileID: 1056377686}
   enemyDie: 0
   Pause: 0
