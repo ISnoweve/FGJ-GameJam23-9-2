@@ -11,7 +11,7 @@ public class Boss : MonoBehaviour
     [SerializeField] private float chaseSpeed;
     [SerializeField] private float HP;
     [SerializeField] private GameObject bullet;
-
+    [SerializeField] private GameObject EndUI;
 
     Animator ani;
     GameObject player;
@@ -261,7 +261,8 @@ public class Boss : MonoBehaviour
     }
     void Dead()
     {
-
+        EndUI.SetActive(true);
+        Destroy(gameObject);
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -270,7 +271,7 @@ public class Boss : MonoBehaviour
             HP -= 1;
             if (HP <= 0)
             {
-                Destroy(gameObject);
+                Dead();
             }
         }
     }
