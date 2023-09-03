@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonsterShootMove : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer textureFlip;
-     private MonsterJudgeZone monsterJudgeZone;
+    private MonsterJudgeZone monsterJudgeZone;
 
     public GameObject player;
     public float moveSpeed;
@@ -13,6 +13,10 @@ public class MonsterShootMove : MonoBehaviour
     private void Awake()
     {
         monsterJudgeZone = GetComponentInChildren<MonsterJudgeZone>();
+    }
+    void Update()
+    {
+        Flip();
     }
     private void FixedUpdate()
     {
@@ -30,7 +34,7 @@ public class MonsterShootMove : MonoBehaviour
 
         if (timeToMove == true && timeToAttack == false)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, moveSpeed*Time.deltaTime);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, moveSpeed * Time.deltaTime);
             //Debug.Log("moving");
         }
         else
@@ -51,6 +55,11 @@ public class MonsterShootMove : MonoBehaviour
         {
             textureFlip.flipX = false;
         }
-        return rotate;
+        return new Vector3(rotate.x,rotate.y,0);
     }
+    void Flip()
+    {
+        
+    }
+
 }

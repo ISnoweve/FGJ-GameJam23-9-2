@@ -47,10 +47,11 @@ public class MonsterSmashMove : MonoBehaviour
         {
             textureFlip.flipX = true;
         }
-        else if(rotate.x >= 0)
+        else if (rotate.x >= 0)
         {
             textureFlip.flipX = false;
         }
-        return rotate;
+        return new Vector3(rotate.x, rotate.y, 0);
+
     }
 }

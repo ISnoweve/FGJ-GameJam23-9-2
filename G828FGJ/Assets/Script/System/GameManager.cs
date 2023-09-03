@@ -27,18 +27,18 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         UIObject.SetActive(Pause);
-        if (Pause)
-        {
-            var vcam = CameraObject.GetComponent<CinemachineVirtualCamera>();
-            vcam.Follow = null;
-            CameraObject.transform.position = currentCamPos;
-        }
-        else
-        {
-            var vcam = CameraObject.GetComponent<CinemachineVirtualCamera>();
-            vcam.Follow = GameObject.FindGameObjectWithTag("Player").gameObject.transform;
-            currentCamPos = CameraObject.transform.position;
-        }
+        // if (Pause)
+        // {
+        //     var vcam = CameraObject.GetComponent<CinemachineVirtualCamera>();
+        //     vcam.Follow = null;
+        //     CameraObject.transform.position = currentCamPos;
+        // }
+        // else
+        // {
+        //     var vcam = CameraObject.GetComponent<CinemachineVirtualCamera>();
+        //     vcam.Follow = GameObject.FindGameObjectWithTag("Player").gameObject.transform;
+        //     currentCamPos = CameraObject.transform.position;
+        // }
 
     }
 
