@@ -154,7 +154,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.245
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6154,18 +6154,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1028431465324534312, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465324534312, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465324534312, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465324534312, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.2
       objectReference: {fileID: 0}
@@ -6203,10 +6191,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1028431465324534312, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1028431465324534314, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
-      propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1028431465324534318, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
@@ -7871,6 +7855,7 @@ MonoBehaviour:
   CameraObject: {fileID: 1056377686}
   enemyDie: 0
   Pause: 0
+  StartGame: 0
   PlayerAlive: 0
 --- !u!1 &2091316594
 GameObject:

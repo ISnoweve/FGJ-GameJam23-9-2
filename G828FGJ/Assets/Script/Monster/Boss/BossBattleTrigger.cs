@@ -2,28 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelTrigger : MonoBehaviour
+public class BossBattleTrigger : MonoBehaviour
 {
-
-    [SerializeField] private Transform portalTrans;
-
 
     void OnCollisionEnter2D(Collision2D other)
     {
-
         if (other.gameObject.CompareTag("Player"))
         {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
             GameObject PressUI = GameObject.Find("PressUI");
             PressUI.SetActive(true);
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (Input.GetKey(KeyCode.E))
             {
-                player.transform.position = portalTrans.transform.position;
+                Boss boss = FindObjectOfType<Boss>();
+                boss.StartBattle = true;
+                Destroy(gameObject);
 
             }
 
 
         }
+
     }
     void OnCollisionExit2D(Collision2D other)
     {

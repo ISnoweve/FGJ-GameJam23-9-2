@@ -26,6 +26,7 @@ public class Boss : MonoBehaviour
 
     void Update()
     {
+
         if (GameManager.instance.Pause)
             return;
         switch (currentState)
@@ -218,7 +219,7 @@ public class Boss : MonoBehaviour
 
         for (int i = 0; i < 15; i++)
         {
-            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle+12));
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle + 12));
             AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
         }
@@ -226,7 +227,7 @@ public class Boss : MonoBehaviour
 
         for (int i = 0; i < 15; i++)
         {
-            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle+12));
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle + 12));
             AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
         }
@@ -267,6 +268,10 @@ public class Boss : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))
         {
             HP -= 1;
+            if (HP <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
     void FaceToPlayerPoint()

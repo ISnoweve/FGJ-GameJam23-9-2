@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public int enemyDie;
     public bool Pause;
+    public bool StartGame;
     public bool PlayerAlive;
     //---------------
     private Vector3 currentCamPos;
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Pause = false;
+        StartGame=false;
         PlayerAlive=true;
         enemyDie = 0;
         AudioManager.Instance.PlayBGM("Game");
