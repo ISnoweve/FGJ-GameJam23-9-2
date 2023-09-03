@@ -218,7 +218,7 @@ public class Boss : MonoBehaviour
 
         for (int i = 0; i < 15; i++)
         {
-            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle+12));
             AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
         }
@@ -226,7 +226,7 @@ public class Boss : MonoBehaviour
 
         for (int i = 0; i < 15; i++)
         {
-            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle+12));
             AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
         }
