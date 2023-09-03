@@ -58,7 +58,7 @@ public class PlayerMove : MonoBehaviour
     }
     void PauseButton()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)||Input.GetKeyDown(KeyCode.Space))
         {
             if (GameManager.instance.Pause)
                 GameManager.instance.Pause = false;
