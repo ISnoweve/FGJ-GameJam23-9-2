@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public int enemyDie;
     public bool Pause;
+    public bool PlayerAlive;
     //---------------
     private Vector3 currentCamPos;
     void Awake()
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Pause = false;
+        PlayerAlive=true;
         enemyDie = 0;
     }
 

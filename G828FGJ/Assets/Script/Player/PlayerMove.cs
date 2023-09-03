@@ -21,6 +21,14 @@ public class PlayerMove : MonoBehaviour
     {
         PauseButton();
 
+        if (!GameManager.instance.PlayerAlive)
+        {
+
+            return;
+
+        }
+
+
         if (GameManager.instance.Pause)
         {
 
@@ -31,8 +39,11 @@ public class PlayerMove : MonoBehaviour
         }
 
     }
+   
     void FixedUpdate()
     {
+        if (!GameManager.instance.PlayerAlive)
+            return;
         Move();
         if (GameManager.instance.Pause)
         {

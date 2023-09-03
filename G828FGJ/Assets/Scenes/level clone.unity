@@ -6077,6 +6077,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1028431465324534314, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1028431465324534318, guid: 90da13685dbfc644c97c1809048a97ae, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7548,6 +7552,7 @@ MonoBehaviour:
   CameraObject: {fileID: 1056377686}
   enemyDie: 0
   Pause: 0
+  PlayerAlive: 0
 --- !u!1 &2091316594
 GameObject:
   m_ObjectHideFlags: 0
