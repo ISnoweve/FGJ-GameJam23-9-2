@@ -255,7 +255,7 @@ MonoBehaviour:
   textureFlip: {fileID: 4555789097326713210}
   player: {fileID: 0}
   moveSpeed: 2.5
-  pivot: {fileID: 0}
+  pivot: {fileID: 1541655493}
 --- !u!114 &4555789096867404748
 MonoBehaviour:
   m_ObjectHideFlags: 0
