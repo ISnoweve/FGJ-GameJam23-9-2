@@ -2132,6 +2132,7 @@ GameObject:
   - component: {fileID: 61513828}
   - component: {fileID: 61513827}
   - component: {fileID: 61513826}
+  - component: {fileID: 61513829}
   m_Layer: 0
   m_Name: LevelTrigger (2)
   m_TagString: Untagged
@@ -2233,7 +2234,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2245,6 +2246,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &61513829
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61513824}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &61916480
 GameObject:
   m_ObjectHideFlags: 0
@@ -11254,6 +11271,7 @@ GameObject:
   - component: {fileID: 204881943}
   - component: {fileID: 204881942}
   - component: {fileID: 204881941}
+  - component: {fileID: 204881944}
   m_Layer: 0
   m_Name: LevelTrigger (1)
   m_TagString: Untagged
@@ -11355,7 +11373,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11367,6 +11385,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &204881944
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204881939}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &207222345
 GameObject:
   m_ObjectHideFlags: 0
@@ -14550,6 +14584,7 @@ GameObject:
   - component: {fileID: 721525785}
   - component: {fileID: 721525784}
   - component: {fileID: 721525783}
+  - component: {fileID: 721525786}
   m_Layer: 0
   m_Name: LevelTrigger (1)
   m_TagString: Untagged
@@ -14651,7 +14686,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14663,6 +14698,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &721525786
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721525781}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &724704002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16060,6 +16111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 998876985}
   - component: {fileID: 998876986}
+  - component: {fileID: 998876987}
   m_Layer: 0
   m_Name: PortalPoint 3
   m_TagString: Untagged
@@ -16122,7 +16174,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 05bbb887e5a19f241b83361a8821a4d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16134,6 +16186,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &998876987
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998876984}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e7baa2fcf9f6e5148a05cd9773b3d899, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1002729734
 GameObject:
   m_ObjectHideFlags: 0
@@ -16334,6 +16401,7 @@ GameObject:
   - component: {fileID: 1044028773}
   - component: {fileID: 1044028772}
   - component: {fileID: 1044028771}
+  - component: {fileID: 1044028774}
   m_Layer: 0
   m_Name: LevelTrigger (1)
   m_TagString: Untagged
@@ -16435,7 +16503,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16447,6 +16515,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1044028774
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044028769}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1056377686
 GameObject:
   m_ObjectHideFlags: 0
@@ -16961,6 +17045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151573516}
   - component: {fileID: 1151573517}
+  - component: {fileID: 1151573518}
   m_Layer: 0
   m_Name: PortalPoint 4
   m_TagString: Untagged
@@ -17023,7 +17108,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 05bbb887e5a19f241b83361a8821a4d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17035,6 +17120,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1151573518
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151573515}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e7baa2fcf9f6e5148a05cd9773b3d899, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1179634844
 GameObject:
   m_ObjectHideFlags: 0
@@ -17139,6 +17239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1192413227}
   - component: {fileID: 1192413228}
+  - component: {fileID: 1192413229}
   m_Layer: 0
   m_Name: PortalPoint 2
   m_TagString: Untagged
@@ -17201,7 +17302,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 05bbb887e5a19f241b83361a8821a4d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17213,6 +17314,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1192413229
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192413226}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e7baa2fcf9f6e5148a05cd9773b3d899, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1199197604
 GameObject:
   m_ObjectHideFlags: 0
@@ -17225,6 +17341,7 @@ GameObject:
   - component: {fileID: 1199197608}
   - component: {fileID: 1199197607}
   - component: {fileID: 1199197606}
+  - component: {fileID: 1199197609}
   m_Layer: 0
   m_Name: LevelTrigger (2)
   m_TagString: Untagged
@@ -17326,7 +17443,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17338,6 +17455,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1199197609
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199197604}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1208813281
 GameObject:
   m_ObjectHideFlags: 0
@@ -19449,6 +19582,7 @@ GameObject:
   - component: {fileID: 1564958254}
   - component: {fileID: 1564958253}
   - component: {fileID: 1564958252}
+  - component: {fileID: 1564958255}
   m_Layer: 0
   m_Name: LevelTrigger
   m_TagString: Untagged
@@ -19550,7 +19684,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19562,6 +19696,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1564958255
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564958250}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1588380518
 GameObject:
   m_ObjectHideFlags: 0
@@ -19921,6 +20071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1628783179}
   - component: {fileID: 1628783180}
+  - component: {fileID: 1628783181}
   m_Layer: 0
   m_Name: PortalPoint (1)
   m_TagString: Untagged
@@ -19983,7 +20134,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 05bbb887e5a19f241b83361a8821a4d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19995,6 +20146,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1628783181
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628783178}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e7baa2fcf9f6e5148a05cd9773b3d899, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1653552173
 GameObject:
   m_ObjectHideFlags: 0
@@ -20983,6 +21149,7 @@ GameObject:
   - component: {fileID: 1791855302}
   - component: {fileID: 1791855301}
   - component: {fileID: 1791855300}
+  - component: {fileID: 1791855303}
   m_Layer: 0
   m_Name: LevelTrigger
   m_TagString: Untagged
@@ -21084,7 +21251,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21096,6 +21263,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1791855303
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791855298}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1798084747
 GameObject:
   m_ObjectHideFlags: 0
@@ -22007,6 +22190,7 @@ GameObject:
   - component: {fileID: 1932914090}
   - component: {fileID: 1932914089}
   - component: {fileID: 1932914088}
+  - component: {fileID: 1932914091}
   m_Layer: 0
   m_Name: LevelTrigger (2)
   m_TagString: Untagged
@@ -22108,7 +22292,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22120,6 +22304,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1932914091
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932914086}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1973029298
 GameObject:
   m_ObjectHideFlags: 0
@@ -22954,6 +23154,7 @@ GameObject:
   - component: {fileID: 2068646638}
   - component: {fileID: 2068646637}
   - component: {fileID: 2068646636}
+  - component: {fileID: 2068646639}
   m_Layer: 0
   m_Name: LevelTrigger
   m_TagString: Untagged
@@ -23055,7 +23256,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 70
   m_Sprite: {fileID: 21300000, guid: 8bda3abf81a890742aa94d586336a995, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -23067,6 +23268,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &2068646639
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068646634}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 450d5089d79c5344d8a4b0b1c70769e5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2091316594
 GameObject:
   m_ObjectHideFlags: 0
