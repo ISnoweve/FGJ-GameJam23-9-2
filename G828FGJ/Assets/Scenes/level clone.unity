@@ -7480,7 +7480,7 @@ MonoBehaviour:
   - name: Bang
     clip: {fileID: 8300000, guid: 3eb6955ed99e2344d8c22a1ee0ce3d04, type: 3}
   - name: Shoot
-    clip: {fileID: 8300000, guid: 3eb6955ed99e2344d8c22a1ee0ce3d04, type: 3}
+    clip: {fileID: 8300000, guid: d64d16754d3fe5a4ba80bbb230f1e48c, type: 3}
   - name: Door
     clip: {fileID: 8300000, guid: b96e5d94678f41c48b3194b21ecab0a8, type: 3}
   - name: Die
