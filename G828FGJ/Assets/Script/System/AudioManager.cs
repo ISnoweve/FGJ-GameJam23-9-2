@@ -6,7 +6,7 @@ using System;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
-    public Sound[] BGMSounds, sfxSounds, UISounds;
+    public Sound[] BGMSounds, sfxSounds;
     public AudioSource BGMSource, sfxSource, UISourse;
     private void Awake()
     {
@@ -30,19 +30,7 @@ public class AudioManager : MonoBehaviour
             BGMSource.Play();
         }
     }
-    public void PlayUI(string name)
-    {
-        Sound s = Array.Find(UISounds, x => x.name == name);
-
-        if (s == null)
-        {
-            Debug.Log("sound not found");
-        }
-        else
-        {
-            UISourse.PlayOneShot(s.clip);
-        }
-    }
+  
     public void PlaySFX(string name)
     {
         Sound s = Array.Find(sfxSounds, x => x.name == name);

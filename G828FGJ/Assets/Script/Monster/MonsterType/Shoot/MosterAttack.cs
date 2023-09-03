@@ -45,6 +45,7 @@ public class MosterAttack : MonoBehaviour
         for (int i = 0; i < burstCount; i++)
         {
             MonsterAttack.Shoot();
+            AudioManager.Instance.PlaySFX("Bang");
             Debug.Log("MakeSureBurst");
             yield return new WaitForSeconds(0.1f);
         }

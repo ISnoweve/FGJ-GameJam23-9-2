@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
         Pause = false;
         PlayerAlive=true;
         enemyDie = 0;
+        AudioManager.Instance.PlayBGM("Game");
     }
 
     void Update()

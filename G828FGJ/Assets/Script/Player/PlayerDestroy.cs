@@ -15,10 +15,11 @@ public class PlayerDestroy : MonoBehaviour
 
     public void Destroy()
     {
-        if (coutDie) return;
+        if (coutDie)return;
+        AudioManager.Instance.PlaySFX("Die");
         ani.SetTrigger("Die");
         GameManager.instance.PlayerAlive = false;
-        StartCoroutine(Resurrection());
+            StartCoroutine(Resurrection());
         Debug.Log("玩家死亡");
     }
     IEnumerator Resurrection()

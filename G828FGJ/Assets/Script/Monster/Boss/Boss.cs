@@ -73,7 +73,11 @@ public class Boss : MonoBehaviour
     void Sleep()
     {
         if (StartBattle)
+        {
+            AudioManager.Instance.PlayBGM("Boss");
             currentState = BossState.Idle;
+
+        }
 
     }
     void Idle()
@@ -96,6 +100,8 @@ public class Boss : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             Instantiate(bullet, transform.position, transform.rotation);
+            AudioManager.Instance.PlaySFX("Bang");
+
             yield return new WaitForSeconds(0.1f);
         }
         yield return new WaitForSeconds(0.5f);
@@ -103,6 +109,8 @@ public class Boss : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             Instantiate(bullet, transform.position, transform.rotation);
+            AudioManager.Instance.PlaySFX("Bang");
+
             yield return new WaitForSeconds(0.1f);
         }
         currentState = BossState.Chase;
@@ -120,18 +128,21 @@ public class Boss : MonoBehaviour
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle + 180));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
             yield return new WaitForSeconds(0.05f);
         }
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle + 180));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
             yield return new WaitForSeconds(0.05f);
         }
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle + 180));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
             yield return new WaitForSeconds(0.05f);
         }
@@ -151,18 +162,21 @@ public class Boss : MonoBehaviour
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
             yield return new WaitForSeconds(0.05f);
         }
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
             yield return new WaitForSeconds(0.05f);
         }
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
             yield return new WaitForSeconds(0.05f);
         }
@@ -182,19 +196,14 @@ public class Boss : MonoBehaviour
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
         }
         yield return new WaitForSeconds(0.3f);
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
-            angle += 24;
-        }
-        yield return new WaitForSeconds(0.3f);
-
-        for (int i = 0; i < 15; i++)
-        {
-            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
         }
         yield return new WaitForSeconds(0.3f);
@@ -202,6 +211,7 @@ public class Boss : MonoBehaviour
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
         }
         yield return new WaitForSeconds(0.3f);
@@ -209,6 +219,15 @@ public class Boss : MonoBehaviour
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            AudioManager.Instance.PlaySFX("Bang");
+            angle += 24;
+        }
+        yield return new WaitForSeconds(0.3f);
+
+        for (int i = 0; i < 15; i++)
+        {
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            AudioManager.Instance.PlaySFX("Bang");
             angle += 24;
         }
 

@@ -39,7 +39,7 @@ public class PlayerMove : MonoBehaviour
         }
 
     }
-   
+
     void FixedUpdate()
     {
         if (!GameManager.instance.PlayerAlive)
@@ -97,7 +97,11 @@ public class PlayerMove : MonoBehaviour
     void Shoot()
     {
         if (Input.GetMouseButtonDown(0))
+        {
+            AudioManager.Instance.PlaySFX("Shoot");
             gun.Shoot();
+
+        }
     }
 
 }
