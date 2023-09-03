@@ -26,7 +26,8 @@ public class Boss : MonoBehaviour
 
     void Update()
     {
-
+        if (GameManager.instance.Pause)
+            return;
         switch (currentState)
         {
             case BossState.None:
@@ -54,7 +55,10 @@ public class Boss : MonoBehaviour
             case BossState.RotateShoot:
 
                 if (!hasCoroutineStarted)
-                    StartCoroutine(RotateShoot());
+                {
+                    StartCoroutine(RotateShoot1());
+                    StartCoroutine(RotateShoot2());
+                }
                 break;
             case BossState.AroundShoot:
 
@@ -89,25 +93,56 @@ public class Boss : MonoBehaviour
         yield return new WaitForSeconds(2f);
         Debug.Log("Shoot");
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 10; i++)
         {
             Instantiate(bullet, transform.position, transform.rotation);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
         }
         yield return new WaitForSeconds(0.5f);
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 10; i++)
         {
             Instantiate(bullet, transform.position, transform.rotation);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
         }
-        currentState = BossState.Idle;
+        currentState = BossState.Chase;
         hasCoroutineStarted = false;
         yield return null;
 
 
     }
-    IEnumerator RotateShoot()
+    IEnumerator RotateShoot1()
+    {
+        hasCoroutineStarted = true;
+        yield return new WaitForSeconds(2f);
+        Debug.Log("Shoot");
+        int angle = 0;
+        for (int i = 0; i < 15; i++)
+        {
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle + 180));
+            angle += 24;
+            yield return new WaitForSeconds(0.05f);
+        }
+        for (int i = 0; i < 15; i++)
+        {
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle + 180));
+            angle += 24;
+            yield return new WaitForSeconds(0.05f);
+        }
+        for (int i = 0; i < 15; i++)
+        {
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle + 180));
+            angle += 24;
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        currentState = BossState.Chase;
+        hasCoroutineStarted = false;
+        yield return null;
+
+
+    }
+    IEnumerator RotateShoot2()
     {
         hasCoroutineStarted = true;
         yield return new WaitForSeconds(2f);
@@ -132,7 +167,7 @@ public class Boss : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
 
-        currentState = BossState.Idle;
+        currentState = BossState.Chase;
         hasCoroutineStarted = false;
         yield return null;
 
@@ -149,13 +184,27 @@ public class Boss : MonoBehaviour
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
             angle += 24;
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         for (int i = 0; i < 15; i++)
         {
             Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
             angle += 24;
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
+
+        for (int i = 0; i < 15; i++)
+        {
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            angle += 24;
+        }
+        yield return new WaitForSeconds(0.3f);
+
+        for (int i = 0; i < 15; i++)
+        {
+            Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, angle));
+            angle += 24;
+        }
+        yield return new WaitForSeconds(0.3f);
 
         for (int i = 0; i < 15; i++)
         {
@@ -163,7 +212,7 @@ public class Boss : MonoBehaviour
             angle += 24;
         }
 
-        currentState = BossState.Idle;
+        currentState = BossState.Chase;
         hasCoroutineStarted = false;
         yield return null;
 
@@ -172,14 +221,20 @@ public class Boss : MonoBehaviour
     IEnumerator Chase()
     {
         hasCoroutineStarted = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         Debug.Log("Chase");
 
         chaseSpeed += 3;
         yield return new WaitForSeconds(0.5f);
 
         chaseSpeed -= 3;
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("Chase");
 
+        chaseSpeed += 3;
+        yield return new WaitForSeconds(0.5f);
+
+        chaseSpeed -= 3;
         currentState = BossState.Idle;
         hasCoroutineStarted = false;
         yield return null;
