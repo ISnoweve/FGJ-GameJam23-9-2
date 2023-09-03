@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="790dc524-f2c3-49f5-80f7-635abfaae975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_Shoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_Shoot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Monster/MonsterType/Shoot/MonsterShootMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Monster/MonsterType/Shoot/MonsterShootMove.cs" afterDir="false" />
-    </list>
+    <list default="true" id="790dc524-f2c3-49f5-80f7-635abfaae975" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +82,7 @@
       <updated>1693712151522</updated>
       <workItem from="1693712165129" duration="1520000" />
       <workItem from="1693713832508" duration="388000" />
-      <workItem from="1693717494957" duration="440000" />
+      <workItem from="1693717494957" duration="1005000" />
     </task>
     <servers />
   </component>
