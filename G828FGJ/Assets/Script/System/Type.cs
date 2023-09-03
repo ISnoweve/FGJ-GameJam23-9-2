@@ -1,8 +1,9 @@
 public enum BossState
 {
+    None,
     Sleep,
     Idle,
-    Patrol,
+    Shoot,
     Chase,
     Attack,
     Dead
