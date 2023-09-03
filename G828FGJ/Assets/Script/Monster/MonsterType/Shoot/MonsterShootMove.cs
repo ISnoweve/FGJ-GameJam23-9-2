@@ -9,6 +9,7 @@ public class MonsterShootMove : MonoBehaviour
 
     public GameObject player;
     public float moveSpeed;
+    public GameObject pivot;
 
     private void Awake()
     {
@@ -30,7 +31,7 @@ public class MonsterShootMove : MonoBehaviour
 
         player = monsterJudgeZone.objectInZone;
 
-        this.transform.up = LookAtPlayer();
+        pivot.transform.up = LookAtPlayer();
 
         if (timeToMove == true && timeToAttack == false)
         {

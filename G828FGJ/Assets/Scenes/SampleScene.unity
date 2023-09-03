@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8972a32f93d03144380dd78c86a96b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UIObject: {fileID: 0}
+  CameraObject: {fileID: 0}
   enemyDie: 0
   Pause: 0
 --- !u!4 &234580806
@@ -224,6 +226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Shoot
       objectReference: {fileID: 0}
+    - target: {fileID: 4555789096867404749, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+      propertyPath: pivot
+      value: 
+      objectReference: {fileID: 1541655493}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
 --- !u!1 &519420028
@@ -367,6 +373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a53aebe6260a7f4dbdab6b279d1f593, type: 3}
+--- !u!1 &1541655493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1541655493, guid: ad3c055c3f0094a4bb9e98dc8ad93323, type: 3}
+  m_PrefabInstance: {fileID: 431617753}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1766634961
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +462,62 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1877311479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1877311481}
+  - component: {fileID: 1877311480}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1877311480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877311479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2555d4976a9bdaa4893970a333b5962e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGMSounds:
+  - name: 
+    clip: {fileID: 0}
+  sfxSounds:
+  - name: 
+    clip: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+  UISounds: []
+  BGMSource: {fileID: 0}
+  sfxSource: {fileID: 0}
+  UISourse: {fileID: 0}
+--- !u!4 &1877311481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877311479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.338472, y: 5.9656277, z: -0.07130354}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2005328893
 GameObject:
   m_ObjectHideFlags: 0
