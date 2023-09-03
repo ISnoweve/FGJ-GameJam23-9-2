@@ -98,7 +98,6 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            AudioManager.Instance.PlaySFX("Shoot");
             gun.Shoot();
 
         }

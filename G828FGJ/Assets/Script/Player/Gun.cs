@@ -52,6 +52,9 @@ public class Gun : MonoBehaviour
         {
             Instantiate(Bullet, shootPoint.position, shootPoint.rotation);
             currentCoolTime = coolTime;
+            AudioManager.Instance.PlaySFX("Shoot");
+
+
         }
         else return;
     }
