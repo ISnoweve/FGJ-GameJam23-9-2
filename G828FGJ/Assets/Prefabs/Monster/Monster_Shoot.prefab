@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 271be4447b7adcd4db60250d69e28505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieSprite: {fileID: 6108124352418481161, guid: dbf227c60ea31ad4c8c16a41451d8a4f, type: 3}
+  dieSprite: {fileID: 3825780701068179506, guid: d04b532a9685e2d4487b52f88cb1ad6f, type: 3}
 --- !u!1 &4555789097167677567
 GameObject:
   m_ObjectHideFlags: 0
