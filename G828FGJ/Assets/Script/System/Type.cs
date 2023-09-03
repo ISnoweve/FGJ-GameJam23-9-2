@@ -1,4 +1,9 @@
-public enum GameType
+public enum BossState
 {
-    CONTINUE, PAUSE
+    Sleep,
+    Idle,
+    Patrol,
+    Chase,
+    Attack,
+    Dead
 }
