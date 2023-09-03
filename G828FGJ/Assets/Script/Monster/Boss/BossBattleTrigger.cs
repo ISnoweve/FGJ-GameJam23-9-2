@@ -5,31 +5,25 @@ using UnityEngine;
 public class BossBattleTrigger : MonoBehaviour
 {
 
-    void OnCollisionEnter2D(Collision2D other)
+    [SerializeField] private bool isBossBattle;
+
+    int hp = 5;
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.tag == "Bullet")
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            GameObject PressUI = GameObject.Find("PressUI");
-            PressUI.SetActive(true);
-            if (Input.GetKey(KeyCode.E))
+            hp -= 1;
+            if (hp <= 0)
             {
-                Boss boss = FindObjectOfType<Boss>();
-                boss.StartBattle = true;
                 Destroy(gameObject);
+                if (isBossBattle)
+                {
+                    Boss boss = FindObjectOfType<Boss>();
+                    boss.StartBattle = true;
+                }
 
             }
-
-
-        }
-
-    }
-    void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            GameObject PressUI = GameObject.Find("PressUI");
-            PressUI.SetActive(false);
 
         }
     }

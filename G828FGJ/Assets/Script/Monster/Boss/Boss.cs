@@ -17,7 +17,7 @@ public class Boss : MonoBehaviour
     GameObject player;
     void Awake()
     {
-        ani = GetComponent<Animator>();
+        ani = GetComponentInParent<Animator>();
     }
     void Start()
     {

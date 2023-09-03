@@ -30,9 +30,9 @@ public class PlayerDestroy : MonoBehaviour
         coutDie = false;
         yield return null;
     }
-    private void OnCollisionEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
             if (coutDie == false)
 

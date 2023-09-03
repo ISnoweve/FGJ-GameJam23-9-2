@@ -8,30 +8,21 @@ public class LevelTrigger : MonoBehaviour
     [SerializeField] private Transform portalTrans;
 
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other) 
     {
 
         if (other.gameObject.CompareTag("Player"))
         {
-            GameObject PressUI = GameObject.Find("PressUI");
-            PressUI.SetActive(true);
+            Debug.Log("1212");
+            
             GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (Input.GetKey(KeyCode.E))
-            {
+           
                 player.transform.position = portalTrans.transform.position;
 
-            }
 
 
-        }
-    }
-    void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            GameObject PressUI = GameObject.Find("PressUI");
-            PressUI.SetActive(false);
 
         }
     }
+  
 }
